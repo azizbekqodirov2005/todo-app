@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ToDo List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <main class="todo-card">
+    <h1 class="todo-title">ToDo <span>list</span></h1>
+
+    <form class="add-form" id="addForm" novalidate>
+      <input type="text" id="taskInput" placeholder="Yangi vazifa qo'shing..." autocomplete="off">
+      <button type="submit" class="add-btn" aria-label="Vazifa qo'shish">+</button>
+    </form>
+    <span class="input-error" id="inputError"></span>
+
+    <ul class="task-list" id="taskList"></ul>
+
+    <p class="empty-state" id="emptyState">Hozircha vazifalar yo'q. Birinchisini qo'shing!</p>
+
+    <div class="list-footer" id="listFooter">
+      <span id="itemsLeft">0 ta faol vazifa</span>
+      <button type="button" class="clear-btn" id="clearCompletedBtn">Bajarilganlarni tozalash</button>
+    </div>
+  </main>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
